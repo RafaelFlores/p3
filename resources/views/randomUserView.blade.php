@@ -33,12 +33,12 @@ echo $faker->address;
 }
 ?>
 @else
-
+<h1 class="for-title" >Enter the number of Random Users</h1>
 <div class='input-text'>
-  <h1>Enter the number of Random Users</h1>
+
 <form method='post' action='/randomuser'>
     <input type='hidden' name='_token' value='{{ csrf_token() }}'>
-    <input type='text' id='input-form' name='numOfUsers'>
+    <input id='input-form' type='text' name='numOfUsers'>
     <input type='submit' value='Submit'>
 </form>
 </div>
