@@ -12,5 +12,26 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('developerbestfriend');
 });
+
+// Route::get('/lorem', function() {
+//
+//     echo 'Aqui va el loremIpsum';
+//
+// });
+
+
+Route::get('/lorem', 'LoremController@getIndex');
+
+// Route::get('/randomuser', function() {
+//
+//     echo 'Aqui va el randomUser';
+//
+// });
+
+Route::get('/randomuser', 'RandomUserController@getIndex');
+
+Route::post('/lorem', 'LoremController@postLorem');
+
+Route::post('/randomuser', 'RandomUserController@postRandomUser');
