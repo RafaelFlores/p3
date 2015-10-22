@@ -14,8 +14,20 @@ class RandomUserController extends Controller {
         }
 
   public function postRandomUser(Request $request) {
+
+    $this->validate($request, [
+        'numOfUsers' => 'required|integer|max:99'
+    ]);
              $numOfUsers = $request->input('numOfUsers');
-             return view('randomUserView')->with('numOfUsers', $numOfUsers);
+             $email = $request->input('email');
+             $username = $request->input('username');
+             $password = $request->input('password');
+
+             return view('randomUserView')
+             ->with('numOfUsers', $numOfUsers)
+             ->with('email', $email)
+             ->with('username', $username)
+             ->with('password', $password);
   }
 }
  ?>

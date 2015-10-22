@@ -18,7 +18,15 @@ $paragraphs = $generator->getParagraphs($numOfParagraphs);
 echo implode('<p>', $paragraphs);
 ?>
 @else
-<h1 class='for-title' >Enter Number of paragraphs</h1>
+<h3 class='for-title' >Enter Number of paragraphs (Max: 99)</h3>
+@if(count($errors) > 0)
+    <ul class="for-title">
+      The following errors occured:
+        @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+        @endforeach
+    </ul>
+    @endif
 <div class='input-text'>
 <form method='post' action='/lorem'>
     <input type='hidden' name='_token' value='{{ csrf_token() }}'>

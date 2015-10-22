@@ -7,6 +7,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 .input-text{
+	display:inline-table;
 	width:40%;
 	margin-left: auto;
 	margin-right: auto;
@@ -15,6 +16,21 @@
 	color:black;
 }
 
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"] + label {
+    display: inline-block;
+    border: 1px solid #000;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+input[type="checkbox"]:checked + label:after {
+    content: '✔';
+    display: inline-block;
+    font-size: 1.6em;
+}
 
 .for-title{
 	color:white;

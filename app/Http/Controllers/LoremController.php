@@ -18,6 +18,9 @@ return view('loremIpsumView');
 
 
 public function postLorem(Request $request) {
+  $this->validate($request, [
+      'numOfParagraphs' => 'required|integer|max:99'
+  ]);
  $numOfParagraphs = $request->input('numOfParagraphs');
 
   return view('loremIpsumView')->with('numOfParagraphs', $numOfParagraphs);
