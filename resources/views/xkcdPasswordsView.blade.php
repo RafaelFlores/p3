@@ -27,7 +27,7 @@
 </div>
 
 <p>
-  <h1 class="for-title" >Enter the number of words for the password (Max: 10)</h1>
+  <h3 class="for-title" >Enter the number of words <br> for the password (Max: 10)</h3>
   @if(count($errors) > 0)
       <ul class="for-title">
         <h3>The following errors occured:</h3>
