@@ -9,7 +9,7 @@
 @stop
 
 @section('content')
-
+<h3>Developer's Best Friend</h3>
   <p>The site where you can find the friendly resourses for the developer</p>
   <p>
     You can select form our tools:
