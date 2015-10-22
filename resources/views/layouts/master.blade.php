@@ -24,10 +24,11 @@
 					<h1><a href="/">Developer BestFriend</a> by Rafael@CS15</h1>
 					<nav id="nav">
 						<ul>
-							<li><a href="/">Home</a></li>
+							<li><a href="/" class="button">Home</a></li>
 
 							<li><a href="/lorem" class="button">LoremIpsum</a></li>
               <li><a href="/randomuser" class="button">RandomUser</a></li>
+							<li><a href="/passgen" class="button">PasswordGenerator</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -47,6 +48,7 @@
           <ul class="actions">
             <li><a href="/lorem" class="button special">LoremIpsum Generator</a></li>
             <li><a href="/randomuser" class="button">Random User Generator</a></li>
+						<li><a href="/passgen" class="button special">xkcd Password Generator</a></li>
           </ul>
 
 				</footer>

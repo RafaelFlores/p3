@@ -35,3 +35,7 @@ Route::get('/randomuser', 'RandomUserController@getIndex');
 Route::post('/lorem', 'LoremController@postLorem');
 
 Route::post('/randomuser', 'RandomUserController@postRandomUser');
+
+Route::get('/passgen', 'PasswordGeneratorController@getIndex');
+
+Route::post('/passgen', 'PasswordGeneratorController@postPass');

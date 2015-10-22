@@ -18,6 +18,8 @@ $paragraphs = $generator->getParagraphs($numOfParagraphs);
 echo implode('<p>', $paragraphs);
 ?>
 @else
+<br>
+<br>
 <h3 class='for-title' >Enter Number of paragraphs (Max: 99)</h3>
 @if(count($errors) > 0)
     <ul class="for-title">
@@ -31,7 +33,13 @@ echo implode('<p>', $paragraphs);
 <form method='post' action='/lorem'>
     <input type='hidden' name='_token' value='{{ csrf_token() }}'>
     <input id='input-form' type='text'  name='numOfParagraphs'>
-    <input type='submit' value='Submit'>
+<p>
+  <br>
+  <br>
+  <br>
+  <input type='submit' value='Submit'>
+</p>
+
 </form>
 </div>
 @endif

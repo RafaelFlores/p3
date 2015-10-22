@@ -21,9 +21,13 @@
   <p>
     LoremIpsum Generator: Generate up to 99 paragraphs of random text to fill your needs.
   </p>
+  <p>
+    xkcd Password Generator: Generate easy to remember passwords <br> You choose to add a number and/or a symbol.
+  </p>
   <ul class="actions">
-    <li><a href="/lorem" class="button special">LoremIpsum Generator</a></li>
-    <li><a href="/randomuser" class="button">Random User Generator</a></li>
+    <li><a href="/lorem" class="button">LoremIpsum Generator</a></li>
+    <li><a href="/randomuser" class="button special">Random User Generator</a></li>
+    <li><a href="/passgen" class="button">xkcd Password Generator</a></li>
   </ul>
 
 

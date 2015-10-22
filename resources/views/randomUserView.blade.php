@@ -16,7 +16,6 @@
 // use the factory to create a Faker\Generator instance
 
 for ($i=0; $i < $numOfUsers ; $i++) {
-  # code...
 
 $faker = Faker\Factory::create();
 
@@ -47,6 +46,8 @@ if(isset($password)) {
 }
 ?>
 @else
+<br>
+<br>
 <h3 class="for-title" >Enter the number of Random Users (Max: 99)</h3>
 @if(count($errors) > 0)
     <ul class="for-title">
