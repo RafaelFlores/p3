@@ -16,14 +16,18 @@
 @else
 
 <h3> Password Generator</h3>
-<p>
+
+  <div class="box1">
   A password needs to comply with two functions: It has to be hard to crack but
   it has to be easy to remember, so thats why  this page genereates passwords
   using words that are easy to remember. This passwords are known to be
   xkcd passwords because they explain the issue in their comic #936 Password
   Strength at <a href="http://www.explainxkcd.com/wiki/index.php/936:_Password_Strength"
   >http://www.explainxkcd.com/wiki/index.php/936:_Password_Strength</a>
-  <h3 class="for-title" >Enter the number of words for the password (Max: 10)</h3>
+</div>
+
+<p>
+  <h1 class="for-title" >Enter the number of words for the password (Max: 10)</h1>
   @if(count($errors) > 0)
       <ul class="for-title">
         <h3>The following errors occured:</h3>
@@ -33,6 +37,9 @@
       </ul>
 
   @endif
+
+
+
 <div class='input-text'>
 
 <form method='post' action='/passgen'>
@@ -42,10 +49,15 @@
     <label for="number"></label>
     <input type="checkbox" name = "symbol" id="symbol" value="symbol">symbol
     <label for="symbol"></label>
+<p>
+
+<br>
+<br>
       <input type='submit' value='Submit'>
-    </p>
+</p>
 
 </form>
 </div>
+  </p>
 @endif
 @stop

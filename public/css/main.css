@@ -16,6 +16,8 @@
 	color:black;
 }
 
+
+
 input[type="checkbox"] {
     display: none;
 }
@@ -33,6 +35,10 @@ input[type="checkbox"]:checked + label:after {
 }
 
 .for-title{
+	display: block;
+	width:40%;
+	margin-left: auto;
+	margin-right: auto;
 	color:white;
 }
 /* Reset */
@@ -2218,6 +2224,19 @@ input[type="checkbox"]:checked + label:after {
 		border-radius: 6px;
 		box-shadow: 0 2px 0 0 #e5e5e5;
 		margin: 0 0 2em 0;
+		padding: 3em;
+	}
+
+	.box1 {
+		width:60%;
+		margin-left: auto;
+		margin-right: auto;
+		background: #fff;
+		color: black;
+		border-radius: 6px;
+		box-shadow: 0 2px 0 0 #e5e5e5;
+
+
 		padding: 3em;
 	}
 
